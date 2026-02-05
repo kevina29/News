@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Arivadaivu | News</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Particle Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Scanlines -->
+  <div class="scanlines"></div>
+
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Logo -->
+  <header class="top-logo">
+    <img src="logo.png" alt="Arivadaivu Logo">
+  </header>
+
+  <!-- Hero -->
+  <main class="hero">
+    <h1>News. Reimagined in 3D.</h1>
+    <p>Visualize incidents. Verify truth. Eliminate rumors.</p>
+
+    <!-- Soft 3D Grid / Mesh -->
+    <canvas id="mesh-canvas"></canvas>
+
+    <!-- Live Truth Pulse -->
+    <div class="truth-pulse">
+      <svg viewBox="0 0 600 120">
+        <path id="wave"
+          d="M0 60 Q 75 20 150 60 T 300 60 T 450 60 T 600 60"
+        />
+      </svg>
+    </div>
+
+    <!-- CTA -->
+    <button class="cta-btn">Enter Experience</button>
+  </main>
+
+  <!-- Ad -->
+  <section class="ad glass">
+    Sponsored · AI Glasses for Real-Time Reality
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="card glass pill">
+      <h3>🌐 3D Incident View</h3>
+      <p>Real locations and events recreated in immersive 3D environments.</p>
+    </div>
+
+    <div class="card glass pill">
+      <h3>🤖 Personal AI</h3>
+      <p>An AI tailored to your interests, timeline, and preferred depth.</p>
+    </div>
+
+    <div class="card glass pill">
+      <h3>🛡 Fake News Shield</h3>
+      <p>Instant AI verification prevents misinformation and rumors.</p>
+    </div>
+
+    <div class="card glass pill">
+      <h3>🧠 Smart Summaries</h3>
+      <p>Short, detailed, or timeline-based summaries—your control.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
